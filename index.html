@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta sobre Protección Animal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-header">
+            <h1 class="form-title">Encuesta sobre Protección Animal</h1>
+            <p class="form-description">Esta encuesta tiene como objetivo recopilar información sobre las opiniones y actitudes hacia la protección animal. Tus respuestas son anónimas y nos ayudarán a mejorar nuestras iniciativas.</p>
+        </div>
+
+        <form id="animalProtectionSurvey">
+            <div class="form-section">
+                <h2 class="question-title">1. ¿Cuál es tu nombre?<span class="required-asterisk">*</span></h2>
+                <input type="text" class="input-field" id="nombre" name="nombre" required placeholder="Tu respuesta">
+            </div>
+
+            <div class="form-section">
+                <h2 class="question-title">Correo electrónico<span class="required-asterisk">*</span></h2>
+                <p class="question-description">Por favor ingresa un correo válido para posibles contactos futuros</p>
+                <input type="email" class="input-field" id="email" name="email" required placeholder="ejemplo@dominio.com">
+            </div>
+
+            <div class="form-section">
+                <h2 class="question-title">2. ¿Qué tipo de animales te preocupa proteger principalmente?<span class="required-asterisk">*</span></h2>
+                <p class="question-description">Selecciona todas las opciones que correspondan</p>
+                <div class="checkbox-option"><input type="checkbox" id="animal1" name="animals" value="domesticos"><label for="animal1">Animales domésticos (perros, gatos, etc.)</label></div>
+                <div class="checkbox-option"><input type="checkbox" id="animal2" name="animals" value="fauna"><label for="animal2">Fauna silvestre</label></div>
+                <div class="checkbox-option"><input type="checkbox" id="animal3" name="animals" value="ganado"><label for="animal3">Animales de ganado</label></div>
+                <div class="checkbox-option"><input type="checkbox" id="animal4" name="animals" value="laboratorio"><label for="animal4">Animales de laboratorio</label></div>
+                <div class="checkbox-option"><input type="checkbox" id="animal5" name="animals" value="todos"><label for="animal5">Todos los animales por igual</label></div>
+            </div>
+
+            <div class="form-section">
+                <h2 class="question-title">3. ¿Qué tan importante consideras que es la protección animal en tu país?<span class="required-asterisk">*</span></h2>
+                <div class="scale-container">
+                    <div class="scale-option"><input type="radio" id="importance1" name="importance" value="1"><div class="scale-label">Nada importante</div></div>
+                    <div class="scale-option"><input type="radio" id="importance2" name="importance" value="2"><div class="scale-label"></div></div>
+                    <div class="scale-option"><input type="radio" id="importance3" name="importance" value="3"><div class="scale-label">Neutral</div></div>
+                    <div class="scale-option"><input type="radio" id="importance4" name="importance" value="4"><div class="scale-label"></div></div>
+                    <div class="scale-option"><input type="radio" id="importance5" name="importance" value="5"><div class="scale-label">Muy importante</div></div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2 class="question-title">4. ¿Has participado en alguna actividad de protección animal?<span class="required-asterisk">*</span></h2>
+                <div class="radio-option"><input type="radio" id="participation1" name="participation" value="si"><label for="participation1">Sí</label></div>
+                <div class="radio-option"><input type="radio" id="participation2" name="participation" value="no"><label for="participation2">No</label></div>
+            </div>
+
+            <div class="form-section">
+                <h2 class="question-title">5. ¿Qué medidas crees que serían más efectivas para mejorar la protección animal en tu comunidad?</h2>
+                <p class="question-description">Por favor, describe tus ideas</p>
+                <textarea class="input-field" id="medidas" name="medidas" rows="4" placeholder="Tu respuesta"></textarea>
+            </div>
+            
+            <div class="form-section">
+                <h2 class="question-title">6. ¿Cuándo fue la última vez que donaste o ayudaste a una organización de protección animal?</h2>
+                <input type="date" class="input-field" id="ultima_donacion" name="ultima_donacion">
+            </div>
+            
+            <div class="form-section" style="text-align:center;">
+                <button type="submit" class="submit-btn">Enviar</button>
+            </div>
+
+        <div class="footer">Gracias por participar en nuestra encuesta sobre protección animal.</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
