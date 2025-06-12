@@ -82,7 +82,7 @@ document.getElementById("animalProtectionSurvey").addEventListener("submit", asy
   };
 
   try {
-    const respuesta = await fetch("https://65ffac8d-3109-47e8-8fce-76309ca55164-00-lrbdjweytiv2.riker.replit.dev/submit", {
+    const respuesta = await fetch("https://65ffac8d-3109-47e8-8fce-76309ca55164-00-lrbdjweytiv2.riker.replit.dev/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
